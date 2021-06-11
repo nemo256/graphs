@@ -76,7 +76,7 @@
                 <router-link 
                   :to="{
                     name:'GraphPage', 
-                    params: { id: graph.id }
+                    params: { graph: graph }
                   }" 
                   class="icon"
                 >
@@ -85,7 +85,7 @@
                 <router-link 
                   :to="{
                     name: 'GraphPageEdit', 
-                    params: {id: graph.id}
+                    params: { graph: graph }
                   }" 
                   class="icon"
                 >

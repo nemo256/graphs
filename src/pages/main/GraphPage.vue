@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>graph {{ $route.params.id }}</h1>
+    <h1>graph {{ $route.params.graph.id }}</h1>
     <b-card align="center" class="card mx-auto mb-4">
       <network 
         class="network mx-auto mb-4"
@@ -10,20 +10,28 @@
         :options="network.options"
       >
       </network>
+      
       <b-button v-on:click="getInfo()" variant="primary">See Statistics</b-button>
     </b-card>
   </div>
 </template>
 
 <script>
+let defNodes = [
+  { id: 1, name: 1, tooltip: "Node 1" },
+  { id: 2, name: 2, tooltip: "Node 2" },
+]
+let defEdges = [
+  { id: 1, from: 1, to: 2 },
+]
 
 export default {
   name: 'GraphPage',
   data() {
     return {
-      nodes: [],
-      edges: [],
       network: {
+        nodes: defNodes,
+        edges: defEdges,
         options: {
           manipulation: {
             enabled: true,
@@ -31,20 +39,8 @@ export default {
           nodes: {
             shape: 'dot',
             size: 12,
-            color: {
-              border: 'grey',
-              
-              highlight: {
-                border: 'blue',
-                background: 'grey'
-              },
-              hover: {
-                border: 'orange',
-                background: 'grey'
-              }
-            },
             font: {
-              color:'white'
+              color:'black'
             },
           }
         }
@@ -53,9 +49,9 @@ export default {
   },
   methods: {
     getInfo() {
-      console.log('asd')
-    }
-  }
+      console.log(this.network.getSelection)
+    },
+  },
 };
 </script>
 

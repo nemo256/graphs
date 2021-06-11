@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Edit {{ $route.params.id }}</h1>
+    <h1>Edit {{ $route.params.graph.id }}</h1>
   </div>
 </template>
 

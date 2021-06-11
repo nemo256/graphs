@@ -19,6 +19,7 @@ export default new Router({
       path: '/graphs/:id',
       name: 'GraphPage',
       component: GraphPage,
+      props: true,
       children: [
         {
           path: 'statistics',
