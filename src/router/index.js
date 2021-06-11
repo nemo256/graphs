@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Graphs from '@/pages/main/Graphs'
 import GraphPage from '@/pages/main/GraphPage'
 import Statistics from '@/pages/main/Statistics'
+import Edit from '@/pages/main/Edit'
 
 Vue.use(Router)
 
@@ -21,7 +22,13 @@ export default new Router({
       children: [
         {
           path: 'statistics',
+          name: 'GraphPageStats',
           component: Statistics
+        },
+        {
+          path: 'edit',
+          name: 'GraphPageEdit',
+          component: Edit
         }
       ]
     }
