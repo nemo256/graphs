@@ -8,9 +8,8 @@
 
 <!-- Badges -->
 ![GitHub Repo stars](https://img.shields.io/github/stars/nemo256/graphs?style=for-the-badge)
-![Maintenance](https://shields.io/maintenance/yes/2022?style=for-the-badge)
+![Maintenance](https://shields.io/maintenance/yes/2023?style=for-the-badge)
 ![License](https://shields.io/github/license/nemo256/graphs?style=for-the-badge)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7484ef23-1fd0-4d87-b229-eb49deb4d39a/deploy-status)](https://app.netlify.com/sites/graphs21/deploys)
 
 <!-- Demo image -->
 ![Graphs1](graphs1.png)
